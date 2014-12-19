@@ -19,8 +19,9 @@ System.out.println("a[" + i + "] = " + a[i]);
 } 
 static double srg(int a[]){
 int p=1,i;
-for(i=0; iif(a[i]>6 && a[i]<=50)
-p*=a[i];
+for(i=0; i<a.length; i++){
+  if(a[i]>6 && a[i]<=50)
+  p*=a[i];
 }
 return Math.sqrt(p/a.length);
 }
